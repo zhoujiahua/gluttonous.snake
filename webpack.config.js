@@ -107,6 +107,9 @@ module.exports = {
 
   // 用来设置引用模块
   resolve: {
-    extensions: [".ts", ".js"],
+    alias: {
+      "@": path.resolve(__dirname, "src"),
+    },
+    extensions: [".js", ".ts", ".tsx", ".jsx"],
   },
 };
