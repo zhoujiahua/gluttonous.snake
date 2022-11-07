@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "app.ts",
   "scripts": {
-    "dev": "webpack serve --open chrome.exe",
+    "dev": "ts-node ./src/server.ts",
+    "serve": "webpack serve --open chrome.exe",
     "watch": "webpack --watch --mode=development --config webpack.config.js",
     "start": "webpack-dev-server --mode=development --config webpack.config.js --open",
     "build": "webpack --mode=production --config webpack.config.js",

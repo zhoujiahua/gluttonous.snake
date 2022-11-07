@@ -9,6 +9,7 @@ module.exports = {
   entry: {
     app: "./src/app.ts",
     print: "./src/print.ts",
+    server: "./src/server.ts",
   },
   // 指定打包文件所在目录
   output: {
