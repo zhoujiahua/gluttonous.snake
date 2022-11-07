@@ -1,2 +1,1 @@
-# gluttonous.snake
-Gluttonous Snake
+# Gluttonous Snake
