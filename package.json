@@ -1,16 +1,15 @@
 {
-  "name": "Gluttonous Snake",
+  "name": "gluttonous.snake",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "app.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "start": "webpack serve --open chrome.exe"
+    "start": "webpack serve --open chrome.exe",
+    "build": "webpack"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "repository": "git@github.com:zhoujiahua/gluttonous.snake.git",
+  "author": "jerry.zhou",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.12.9",
     "@babel/preset-env": "^7.12.7",
