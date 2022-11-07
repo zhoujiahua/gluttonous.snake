@@ -100,8 +100,8 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HTMLWebpackPlugin({
-      // title: "这是一个自定义的title"
-      template: "./src/index.html",
+      title: "Gluttonous Snake",
+      template: "./public/index.html",
     }),
   ],
 
