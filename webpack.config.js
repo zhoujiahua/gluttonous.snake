@@ -25,6 +25,13 @@ module.exports = {
     },
   },
 
+  // 启动本地服务配置
+  devServer: {
+    static: {
+      directory: path.join(__dirname, "/"),
+    },
+  },
+
   // 指定webpack打包时要使用模块
   module: {
     // 指定要加载的规则
