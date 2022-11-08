@@ -4,7 +4,7 @@ git pull
 
 git add .
 
-git commit -m 'Auto commit code'
+git commit -m "Auto commit code."
 
 git push -u origin master
 
