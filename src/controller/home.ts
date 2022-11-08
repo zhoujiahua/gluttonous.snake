@@ -1,13 +1,12 @@
-import { Request, Response } from "express";
+import { Auth } from "./base";
 
-/**
- * Home page.
- * @route GET /
- */
-export const index = (req: Request, res: Response) => {
-  // res.render("home", {
-  //   title: "Home",
-  // });
-  // res.json({ title: "Hi Node" });
-  return res.send("Hi Home.");
-};
+export class Home extends Auth {
+  title?: string;
+  constructor(baseUrl: string, title: string) {
+    super(baseUrl);
+    this.title = title;
+  }
+  getBaseUrl(): string {
+    return this.baseUrl;
+  }
+}

@@ -1,11 +1,11 @@
-interface User {
+interface UserType {
   _username: string;
   _password: string;
   age?: number;
   sex?: string;
 }
 
-export class UserContorl implements User {
+export class User implements UserType {
   _username: string;
   _password: string;
   age?: number;

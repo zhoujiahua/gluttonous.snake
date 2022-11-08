@@ -1,3 +1,3 @@
-import { UserContorl } from "./controller/index";
-const uc = new UserContorl("jerry", "123456", 18, "man");
-console.log(uc.userInfo());
+import { Home } from "./controller/index";
+let hm = new Home("https://api.panghu.org", "Hello Jerry");
+console.log(hm.getBaseUrl(), hm.accessToken());
