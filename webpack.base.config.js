@@ -79,6 +79,16 @@ module.exports = {
         exclude: /node-modules/,
       },
 
+      {
+        test: /\.m?js$/,
+        include: [
+          // 设置包含的文件后 编译时 babel-loader 只用于编译包含内的文件
+          path.resolve(__dirname, "./src"),
+          // path.resolve(__dirname,'./node_modules/@vendor/your-module')
+        ],
+        loader: "babel-loader", //默认支持 es7
+      },
+
       // 加载less文件和css文件
       {
         test: /\.(less|css)$/,
@@ -131,9 +141,13 @@ module.exports = {
 
   // 用来设置引用模块
   resolve: {
+    modules: [
+      path.resolve(__dirname, "node_modules"), // 指定当前目录下的 node_modules 优先查找
+      // 'node_modules', // 如果有一些类库是放在一些奇怪的地方的，你可以添加自定义的路径或者目录
+    ],
     alias: {
       "@": path.resolve(__dirname, "src"),
     },
-    extensions: [".js", ".ts", ".tsx", ".jsx"],
+    extensions: [".js", ".ts", ".tsx", ".jsx", ".json"],
   },
 };
