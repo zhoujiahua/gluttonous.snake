@@ -17,7 +17,7 @@ module.exports = {
     // 指定打包文件的目录
     path: path.resolve(__dirname, "dist"),
     // 静态资源配置
-    publicPath: "/",
+    publicPath: "./",
     // 打包后文件的文件
     // filename: "bundle.js",
     filename: "[name].bundle.js",
